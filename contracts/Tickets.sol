@@ -23,7 +23,6 @@ contract Tickets {
     }
   }
 
-
   function buyTicket(uint256 _index) external payable {
     require(_index < TOTAL_PRICE && _index >= 0);
     require(tickets[_index].owner == address(0x0));
